@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* link das fontes usadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Tipografia */
+:root {
+    --fonteProgr: "Chakra Petch", sans-serif;
+    --fontForte: "Rowdies", sans-serif;
+    --fonteRedonda: "Concert One", sans-serif;
+    --fonteSuave:"Raleway", sans-serif;
+
+    /* cores */
+
+    --Cinza:rgb(41, 40, 40);
+    --laranjaHTML:rgb(255, 100, 11);
+    --AzulCSS:rgb(38, 77, 228);
+    --borda:rgb(0, 0, 0);
+    --BOXshadow:rgba(0, 0, 0, 0.151);
+    --FundoNavegacao:rgba(255, 68, 0, 0.336);
+
+}
+
+/* configurações */
+
+* {padding: 0px;
+    margin: 0px;
+    box-sizing: border-box ;}
+
+/* cabeçalho */
+
+header {background-color: #171810;
+   padding: 0px 20px 0px 20px;
+    }
+
+#sec1header {background-color: #171810;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;}
+
+.subsec1header > img {width: 300px;}
+
+.subsec2header {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+    height: 80px;
+    background-color: #171810;
+    position: relative;
+    z-index: 3;
+    }
+
+.subsec2header > h3 {color: white;
+    font-family: var(--fonteProgr);
+    cursor: pointer;
+    }
+
+.subsec2header > h3:hover {text-decoration: underline #03FA6E;
+    transition: text-decoration 1s ease}
+
+.subsec2header > h3 > img {width: 15px;}
+
+.subsec3header {display: flex;
+    flex-direction: column ;
+    position: absolute;
+    top: -38%;
+    left: 89%;
+    z-index: 1;
+    background-color: #171810;
+    padding: 20px 30px 20px 20px;
+}
+
+.subsec3header > a {text-decoration: none;
+    color: white;
+    font-family: var(--fonteProgr);
+    margin-bottom: 5px;
+    }
+
+.subsec3header > a:hover {text-decoration: underline #03FA6E;
+    transition: text-decoration 1s ease}
+
+.subsec3header > hr {background-color: white;
+    width: 70px;
+    margin-bottom: 5px;
+    }
+
+
+/* menu principal */
+
+main {height: 2000px;}
+
+#sec1main {display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('imagens/fundo\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100vw;
+   }
+
+.subsec1main {position: relative;
+    top:-10%;
+    left: 5%;
+    background-color:#171810;
+    padding: 20px;
+    width: 400px;
+    }
+
+.subsec1main > p {font-family: var(--fonteProgr);
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 0px 2px #03FA6E;
+   }
+
+.subsec2main > img {width: 300px;}
+
+#sec2main {background-image: url('imagens/fundo\ 2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;}
